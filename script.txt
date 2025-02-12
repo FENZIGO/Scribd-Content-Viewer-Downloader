@@ -108,7 +108,7 @@
             console.log(`doc_number: ${part1}`);
             console.log(`doc_title: ${part2}`);
      
-            const newUrl = `https://compress-pdf.vietdreamhouse.com/?fileurl=https://scribd.downloader.tips/pdownload/${part1}/${part2}`;
+            const newUrl = `https://compress-pdf.vietdreamhouse.com/?fileurl=https://scribd.downloader.tips/pdownload/${part1}/${part2}&title=${part2}`;
             window.location.href = newUrl;
         }
         else {
