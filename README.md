@@ -1,8 +1,7 @@
 ## Installation
 1. Install the [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/get-it/) browser extension
 2. Install the script from [GreasyFork](https://greasyfork.org/en/scripts/535783-scribd-viewer-downloader)
-<br>
-
+----
 ## Information
 Fork of the [original script](https://github.com/FENZIGO/Scribd-Content-Viewer-Downloader)  <br>
 The following changes have been made:
