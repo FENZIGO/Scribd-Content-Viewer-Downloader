@@ -58,13 +58,16 @@
     const regex = /https:\/\/www\.scribd\.com\/[^/]+\/(\d+)\/([^/?#]+)/;
     const match = savedUrl.match(regex);
 
-    if (match) {
-      const part1 = match[1];
-      const part2 = match[2];
-      const newUrl = `https://compress-pdf.vietdreamhouse.com/?fileurl=https://scribd.downloader.tips/pdownload/${part1}/${part2}`;
-      window.location.href = newUrl;
+     if (match) {
+      const [_, id, title] = match;
+      const newUrl = `https://compress-pdf.vietdreamhouse.com/?fileurl=https://scribd.downloader.tips/pdownload/${id}/${title}`;
+      try {
+        window.location.href = newUrl;
+      } catch (e) {
+        alert('PDF download failed. Third party download site might me down. Try again later or manually on "https://scribd.downloader.tips".');
+      }
     } else {
-      alert('URL does not match');
+      alert('Invalid URL pattern.');
     }
   }
 
