@@ -1,6 +1,6 @@
 # Scribd Content Viewer/Downloader
 
-![Version](https://img.shields.io/badge/version-1.02-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Version](https://img.shields.io/badge/version-1.03-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Description
 
