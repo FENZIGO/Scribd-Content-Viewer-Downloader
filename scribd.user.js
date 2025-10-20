@@ -55,7 +55,7 @@
     let savedUrl = localStorage.getItem('originalUrl');
     if (!savedUrl) savedUrl = window.location.href;
 
-    const regex = /https?:\/\/(?:www\.)?scribd\.com\/[^/]+\/(\d+)\/([^/?#]+)/;
+    const regex = /https?:\/\/(?:.*\.)?scribd\.com\/[^/]+\/(\d+)\/([^/?#]+)/;
     const match = savedUrl.match(regex);
 
     if (match) {
