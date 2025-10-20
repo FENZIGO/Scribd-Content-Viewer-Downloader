@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       *://*.scribd.com/*
 // @grant       none
-// @version     1.03
+// @version     1.04
 // @author      FENZIGO
 // @description View or export scribd docs content for free
 // @license MIT
