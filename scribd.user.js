@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       *://*.scribd.com/*
 // @grant       none
-// @version     1.05
+// @version     1.06
 // @author      FENZIGO
 // @description View or export scribd docs content for free
 // @license MIT
@@ -57,16 +57,16 @@
     let savedUrl = localStorage.getItem('originalUrl');
     if (!savedUrl) savedUrl = window.location.href;
 
-    const regex = /https?:\/\/(?:.*\.)?scribd\.com\/[^/]+\/(\d+)\/([^/?#]+)/;
+    const regex = /https?:\/\/(?:.*\.)?scribd\.com\/([^/]+)\/(\d+)\/([^/?#]+)/;
     const match = savedUrl.match(regex);
 
     if (match) {
-      const [_, id, title] = match;
-      const newUrl = `https://compress-pdf.vietdreamhouse.com/?fileurl=https://scribd.downloader.tips/pdownload/${id}/${title}`;
+      const [_, type, id, title] = match;
+      const newUrl = `https://scribd.downloader.tips/${type}/${id}/${title}`;
       try {
         window.location.href = newUrl;
       } catch (e) {
-        alert('PDF download failed. Third party download site might be down. Try again later or manually on "https://scribd.downloader.tips".');
+        alert('PDF download failed. Third party download site might be down. Try again later or manually on "https://scribd.downloader.tips" or "https://scribd.vdownloaders.com".');
       }
     } else {
       alert('Invalid URL pattern.');
@@ -81,7 +81,6 @@
 
     if (match) {
       const [_, type, id, title] = match;
-
       const newUrl = `https://scribd.vdownloaders.com/${type}/${id}/${title}`;
 
       try {
