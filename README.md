@@ -24,7 +24,7 @@ You can install this script directly from [GreasyFork](https://greasyfork.org/en
 
 After installing the script, visit any Scribd document page. You will see three buttons:
 
-![Buttons](https://github.com/FENZIGO/Scribd-Content-Viewer-Downloader/blob/main/scribd_screen.png)
+![Buttons](https://github.com/FENZIGO/Scribd-Content-Viewer-Downloader/blob/main/scribdScreen.png)
 
 - **View Full**: Click to view the full document.
 - **Download (TXT)**: Click to download the text content as a `.txt` file.
