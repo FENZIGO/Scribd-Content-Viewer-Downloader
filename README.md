@@ -1,6 +1,6 @@
 # Scribd Content Viewer/Downloader
 
-![Version](https://img.shields.io/badge/version-1.04-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Version](https://img.shields.io/badge/version-1.05-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Description
 
@@ -28,7 +28,8 @@ After installing the script, visit any Scribd document page. You will see three 
 
 - **View Full**: Click to view the full document.
 - **Download (TXT)**: Click to download the text content as a `.txt` file.
-- **Download (PDF)**: Click to download the document as a PDF.
+- **Download (PDF)**: (external site don't work atm)Click to download the document as a PDF.
+- **Alternative Download (PDF)**: Click to download the document as a PDF.
 
 ## License
 
